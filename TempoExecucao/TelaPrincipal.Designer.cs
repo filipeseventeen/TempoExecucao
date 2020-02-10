@@ -40,7 +40,7 @@
             this.lblTempo = new System.Windows.Forms.Label();
             this.lblSeries = new System.Windows.Forms.Label();
             this.lblDescanso = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -187,19 +187,19 @@
             this.lblDescanso.TabIndex = 11;
             this.lblDescanso.Text = "00:00";
             // 
-            // button1
+            // btnIniciar
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(329, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 46);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnIniciar.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciar.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnIniciar.Location = new System.Drawing.Point(329, 180);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(213, 46);
+            this.btnIniciar.TabIndex = 12;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.button1_Click);
             // 
             // TelaPrincipal
             // 
@@ -207,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(564, 245);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblDescanso);
             this.Controls.Add(this.lblSeries);
             this.Controls.Add(this.lblTempo);
@@ -245,7 +245,7 @@
         private System.Windows.Forms.Label lblTempo;
         private System.Windows.Forms.Label lblSeries;
         private System.Windows.Forms.Label lblDescanso;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIniciar;
     }
 }
 

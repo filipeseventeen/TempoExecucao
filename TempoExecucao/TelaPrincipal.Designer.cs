@@ -31,15 +31,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTempo = new System.Windows.Forms.TextBox();
+            this.txtSeries = new System.Windows.Forms.TextBox();
+            this.txtDescanso = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblTempo = new System.Windows.Forms.Label();
+            this.lblSeries = new System.Windows.Forms.Label();
+            this.lblDescanso = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -79,41 +79,41 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Descanso";
             // 
-            // textBox1
+            // txtTempo
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.textBox1.Location = new System.Drawing.Point(201, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(84, 46);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTempo.BackColor = System.Drawing.Color.DimGray;
+            this.txtTempo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTempo.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.txtTempo.Location = new System.Drawing.Point(201, 22);
+            this.txtTempo.Name = "txtTempo";
+            this.txtTempo.Size = new System.Drawing.Size(84, 46);
+            this.txtTempo.TabIndex = 3;
+            this.txtTempo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtSeries
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.textBox2.Location = new System.Drawing.Point(201, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 46);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSeries.BackColor = System.Drawing.Color.DimGray;
+            this.txtSeries.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeries.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.txtSeries.Location = new System.Drawing.Point(201, 180);
+            this.txtSeries.Name = "txtSeries";
+            this.txtSeries.Size = new System.Drawing.Size(84, 46);
+            this.txtSeries.TabIndex = 4;
+            this.txtSeries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtDescanso
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DimGray;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.textBox3.Location = new System.Drawing.Point(201, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(84, 46);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDescanso.BackColor = System.Drawing.Color.DimGray;
+            this.txtDescanso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescanso.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescanso.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.txtDescanso.Location = new System.Drawing.Point(201, 102);
+            this.txtDescanso.Name = "txtDescanso";
+            this.txtDescanso.Size = new System.Drawing.Size(84, 46);
+            this.txtDescanso.TabIndex = 5;
+            this.txtDescanso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -151,41 +151,41 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Séries:";
             // 
-            // label7
+            // lblTempo
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label7.Location = new System.Drawing.Point(459, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 36);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "00:00";
+            this.lblTempo.AutoSize = true;
+            this.lblTempo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTempo.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTempo.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lblTempo.Location = new System.Drawing.Point(459, 22);
+            this.lblTempo.Name = "lblTempo";
+            this.lblTempo.Size = new System.Drawing.Size(83, 36);
+            this.lblTempo.TabIndex = 9;
+            this.lblTempo.Text = "00:00";
             // 
-            // label8
+            // lblSeries
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label8.Location = new System.Drawing.Point(459, 121);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 36);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "0";
+            this.lblSeries.AutoSize = true;
+            this.lblSeries.BackColor = System.Drawing.Color.Transparent;
+            this.lblSeries.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeries.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lblSeries.Location = new System.Drawing.Point(459, 130);
+            this.lblSeries.Name = "lblSeries";
+            this.lblSeries.Size = new System.Drawing.Size(30, 36);
+            this.lblSeries.TabIndex = 10;
+            this.lblSeries.Text = "0";
             // 
-            // label9
+            // lblDescanso
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label9.Location = new System.Drawing.Point(459, 76);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 36);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "00:00";
+            this.lblDescanso.AutoSize = true;
+            this.lblDescanso.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescanso.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescanso.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lblDescanso.Location = new System.Drawing.Point(459, 76);
+            this.lblDescanso.Name = "lblDescanso";
+            this.lblDescanso.Size = new System.Drawing.Size(83, 36);
+            this.lblDescanso.TabIndex = 11;
+            this.lblDescanso.Text = "00:00";
             // 
             // button1
             // 
@@ -199,6 +199,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Iniciar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TelaPrincipal
             // 
@@ -207,21 +208,22 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(564, 245);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblDescanso);
+            this.Controls.Add(this.lblSeries);
+            this.Controls.Add(this.lblTempo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescanso);
+            this.Controls.Add(this.txtSeries);
+            this.Controls.Add(this.txtTempo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TelaPrincipal";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela principal";
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.ResumeLayout(false);
@@ -234,15 +236,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTempo;
+        private System.Windows.Forms.TextBox txtSeries;
+        private System.Windows.Forms.TextBox txtDescanso;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblTempo;
+        private System.Windows.Forms.Label lblSeries;
+        private System.Windows.Forms.Label lblDescanso;
         private System.Windows.Forms.Button button1;
     }
 }

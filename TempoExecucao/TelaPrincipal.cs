@@ -17,7 +17,20 @@ namespace TempoExecucao
             InitializeComponent();
         }
 
+        int min_exec;
+        int seg_exec;
+        int tempo_exec;
+
+        int min_desc;
+        int seg_desc;
+        int tempo_desc;
+
         private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

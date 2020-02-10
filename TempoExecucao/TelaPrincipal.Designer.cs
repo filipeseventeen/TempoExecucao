@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +42,9 @@
             this.lblSeries = new System.Windows.Forms.Label();
             this.lblDescanso = new System.Windows.Forms.Label();
             this.btnIniciar = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.btnEncerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +65,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(15, 180);
+            this.label2.Location = new System.Drawing.Point(15, 218);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 49);
             this.label2.TabIndex = 1;
@@ -73,7 +77,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(15, 99);
+            this.label3.Location = new System.Drawing.Point(15, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(177, 49);
             this.label3.TabIndex = 2;
@@ -97,7 +101,7 @@
             this.txtSeries.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeries.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtSeries.Location = new System.Drawing.Point(201, 180);
+            this.txtSeries.Location = new System.Drawing.Point(201, 218);
             this.txtSeries.Name = "txtSeries";
             this.txtSeries.Size = new System.Drawing.Size(84, 46);
             this.txtSeries.TabIndex = 4;
@@ -109,7 +113,7 @@
             this.txtDescanso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescanso.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescanso.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtDescanso.Location = new System.Drawing.Point(201, 102);
+            this.txtDescanso.Location = new System.Drawing.Point(201, 121);
             this.txtDescanso.Name = "txtDescanso";
             this.txtDescanso.Size = new System.Drawing.Size(84, 46);
             this.txtDescanso.TabIndex = 5;
@@ -201,12 +205,37 @@
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // btnEncerrar
+            // 
+            this.btnEncerrar.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.btnEncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEncerrar.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEncerrar.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnEncerrar.Location = new System.Drawing.Point(329, 233);
+            this.btnEncerrar.Name = "btnEncerrar";
+            this.btnEncerrar.Size = new System.Drawing.Size(213, 46);
+            this.btnEncerrar.TabIndex = 13;
+            this.btnEncerrar.Text = "Encerrar";
+            this.btnEncerrar.UseVisualStyleBackColor = false;
+            this.btnEncerrar.Click += new System.EventHandler(this.btnEncerrar_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(564, 245);
+            this.ClientSize = new System.Drawing.Size(564, 291);
+            this.Controls.Add(this.btnEncerrar);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblDescanso);
             this.Controls.Add(this.lblSeries);
@@ -246,6 +275,9 @@
         private System.Windows.Forms.Label lblSeries;
         private System.Windows.Forms.Label lblDescanso;
         private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button btnEncerrar;
     }
 }
 

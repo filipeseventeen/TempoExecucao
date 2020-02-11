@@ -45,6 +45,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btnEncerrar = new System.Windows.Forms.Button();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.lbl321 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +67,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(15, 218);
+            this.label2.Location = new System.Drawing.Point(15, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 49);
             this.label2.TabIndex = 1;
@@ -77,7 +79,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(15, 118);
+            this.label3.Location = new System.Drawing.Point(15, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(177, 49);
             this.label3.TabIndex = 2;
@@ -101,7 +103,7 @@
             this.txtSeries.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeries.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtSeries.Location = new System.Drawing.Point(201, 218);
+            this.txtSeries.Location = new System.Drawing.Point(201, 233);
             this.txtSeries.Name = "txtSeries";
             this.txtSeries.Size = new System.Drawing.Size(84, 46);
             this.txtSeries.TabIndex = 4;
@@ -113,7 +115,7 @@
             this.txtDescanso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescanso.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescanso.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtDescanso.Location = new System.Drawing.Point(201, 121);
+            this.txtDescanso.Location = new System.Drawing.Point(201, 130);
             this.txtDescanso.Name = "txtDescanso";
             this.txtDescanso.Size = new System.Drawing.Size(84, 46);
             this.txtDescanso.TabIndex = 5;
@@ -229,12 +231,31 @@
             this.btnEncerrar.UseVisualStyleBackColor = false;
             this.btnEncerrar.Click += new System.EventHandler(this.btnEncerrar_Click);
             // 
+            // timer3
+            // 
+            this.timer3.Interval = 1000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // lbl321
+            // 
+            this.lbl321.AutoSize = true;
+            this.lbl321.BackColor = System.Drawing.Color.Transparent;
+            this.lbl321.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl321.Font = new System.Drawing.Font("Candara", 279.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl321.Location = new System.Drawing.Point(86, -127);
+            this.lbl321.Name = "lbl321";
+            this.lbl321.Size = new System.Drawing.Size(389, 455);
+            this.lbl321.TabIndex = 14;
+            this.lbl321.Text = "0";
+            this.lbl321.Visible = false;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(564, 291);
+            this.Controls.Add(this.lbl321);
             this.Controls.Add(this.btnEncerrar);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblDescanso);
@@ -278,6 +299,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btnEncerrar;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Label lbl321;
     }
 }
 

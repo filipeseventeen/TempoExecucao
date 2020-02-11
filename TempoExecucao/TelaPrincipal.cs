@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace TempoExecucao
 {
@@ -27,6 +28,8 @@ namespace TempoExecucao
 
         int quant_series;
 
+        WindowsMediaPlayer som;
+
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
 
@@ -34,6 +37,7 @@ namespace TempoExecucao
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             // Validando os campos
             if(txtTempo.Text == String.Empty)
             {
@@ -47,6 +51,9 @@ namespace TempoExecucao
             }
             else
             {
+
+                ThreeTwoOne();
+
                 tempo_exec = Convert.ToInt16(txtTempo.Text);
                 tempo_desc = Convert.ToInt16(txtDescanso.Text);
                 quant_series = Convert.ToInt16(txtSeries.Text);
@@ -70,6 +77,16 @@ namespace TempoExecucao
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if(timer1.Enabled == true)
+            {
+                //TOCAR SOM
+            }
+            else
+            {
+                //PARAR SOM
+            }
+
+
             if(seg_exec > 0)
             {
                 seg_exec--;
@@ -91,7 +108,17 @@ namespace TempoExecucao
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if(seg_desc > 0)
+            if (timer2.Enabled == true)
+            {
+                //TOCAR SOM
+            }
+            else
+            {
+                //PARAR SOM
+            }
+
+
+            if (seg_desc > 0)
             {
                 seg_desc--;
                 if(seg_desc == 0 && min_desc > 0)
@@ -151,6 +178,30 @@ namespace TempoExecucao
             lblDescanso.Text = "00:00";
             lblSeries.Text = "0";
 
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            int n = 4;
+
+            n--;
+
+            if (n == 0)
+            {
+                timer3.Enabled = false;
+            }
+
+            lbl321.Text = n.ToString();
+
+
+            lbl321.Visible = true;
+        }
+
+        private void ThreeTwoOne()
+        {
+            timer3.Enabled = true;
+
+            
         }
     }
 }

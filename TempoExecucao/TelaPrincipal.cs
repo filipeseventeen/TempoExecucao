@@ -13,10 +13,7 @@ namespace TempoExecucao
 {
     public partial class TelaPrincipal : Form
     {
-        public TelaPrincipal()
-        {
-            InitializeComponent();
-        }
+        string pasta_images = "";
 
         int min_exec;
         int seg_exec;
@@ -28,11 +25,27 @@ namespace TempoExecucao
 
         int quant_series;
 
+        Image img_exercitando;
+        Image img_descansando;
+        Image img_esperando;
+
         WindowsMediaPlayer som;
+
+        public TelaPrincipal()
+        {
+            InitializeComponent();
+            pasta_images = Application.StartupPath + @"\images\";
+
+            img_exercitando = Image.FromFile(pasta_images + "img_exercitando.png");
+            img_esperando = Image.FromFile(pasta_images + "img_esperando.png");
+            img_descansando = Image.FromFile(pasta_images + "img_descansando.png");
+        }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-
+            
+            ptbPrincipal.BackgroundImage = img_descansando;
+            ptbPrincipal.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -202,6 +215,26 @@ namespace TempoExecucao
             timer3.Enabled = true;
 
             
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl321_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl321_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

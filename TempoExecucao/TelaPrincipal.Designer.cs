@@ -47,6 +47,8 @@
             this.btnEncerrar = new System.Windows.Forms.Button();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.lbl321 = new System.Windows.Forms.Label();
+            this.ptbPrincipal = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,7 +129,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(323, 22);
+            this.label4.Location = new System.Drawing.Point(590, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 36);
             this.label4.TabIndex = 6;
@@ -139,7 +141,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 21.75F);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(323, 76);
+            this.label5.Location = new System.Drawing.Point(590, 77);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 36);
             this.label5.TabIndex = 7;
@@ -151,7 +153,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 21.75F);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(323, 130);
+            this.label6.Location = new System.Drawing.Point(590, 131);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 36);
             this.label6.TabIndex = 8;
@@ -163,7 +165,7 @@
             this.lblTempo.BackColor = System.Drawing.Color.Transparent;
             this.lblTempo.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTempo.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.lblTempo.Location = new System.Drawing.Point(459, 22);
+            this.lblTempo.Location = new System.Drawing.Point(726, 23);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(83, 36);
             this.lblTempo.TabIndex = 9;
@@ -175,7 +177,7 @@
             this.lblSeries.BackColor = System.Drawing.Color.Transparent;
             this.lblSeries.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeries.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.lblSeries.Location = new System.Drawing.Point(459, 130);
+            this.lblSeries.Location = new System.Drawing.Point(726, 131);
             this.lblSeries.Name = "lblSeries";
             this.lblSeries.Size = new System.Drawing.Size(30, 36);
             this.lblSeries.TabIndex = 10;
@@ -187,7 +189,7 @@
             this.lblDescanso.BackColor = System.Drawing.Color.Transparent;
             this.lblDescanso.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescanso.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.lblDescanso.Location = new System.Drawing.Point(459, 76);
+            this.lblDescanso.Location = new System.Drawing.Point(726, 77);
             this.lblDescanso.Name = "lblDescanso";
             this.lblDescanso.Size = new System.Drawing.Size(83, 36);
             this.lblDescanso.TabIndex = 11;
@@ -199,7 +201,7 @@
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciar.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnIniciar.Location = new System.Drawing.Point(329, 180);
+            this.btnIniciar.Location = new System.Drawing.Point(596, 181);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(213, 46);
             this.btnIniciar.TabIndex = 12;
@@ -223,7 +225,7 @@
             this.btnEncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEncerrar.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEncerrar.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnEncerrar.Location = new System.Drawing.Point(329, 233);
+            this.btnEncerrar.Location = new System.Drawing.Point(596, 234);
             this.btnEncerrar.Name = "btnEncerrar";
             this.btnEncerrar.Size = new System.Drawing.Size(213, 46);
             this.btnEncerrar.TabIndex = 13;
@@ -239,22 +241,30 @@
             // lbl321
             // 
             this.lbl321.AutoSize = true;
-            this.lbl321.BackColor = System.Drawing.Color.Transparent;
-            this.lbl321.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl321.Font = new System.Drawing.Font("Candara", 279.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl321.Location = new System.Drawing.Point(86, -127);
+            this.lbl321.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl321.Location = new System.Drawing.Point(56, 95);
             this.lbl321.Name = "lbl321";
-            this.lbl321.Size = new System.Drawing.Size(389, 455);
+            this.lbl321.Size = new System.Drawing.Size(99, 108);
             this.lbl321.TabIndex = 14;
-            this.lbl321.Text = "0";
-            this.lbl321.Visible = false;
+            this.lbl321.Text = "3";
+            this.lbl321.Click += new System.EventHandler(this.lbl321_Click_1);
+            // 
+            // ptbPrincipal
+            // 
+            this.ptbPrincipal.Location = new System.Drawing.Point(304, 22);
+            this.ptbPrincipal.Name = "ptbPrincipal";
+            this.ptbPrincipal.Size = new System.Drawing.Size(280, 257);
+            this.ptbPrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbPrincipal.TabIndex = 15;
+            this.ptbPrincipal.TabStop = false;
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(564, 291);
+            this.ClientSize = new System.Drawing.Size(838, 291);
+            this.Controls.Add(this.ptbPrincipal);
             this.Controls.Add(this.lbl321);
             this.Controls.Add(this.btnEncerrar);
             this.Controls.Add(this.btnIniciar);
@@ -276,6 +286,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela principal";
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,6 +312,7 @@
         private System.Windows.Forms.Button btnEncerrar;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Label lbl321;
+        private System.Windows.Forms.PictureBox ptbPrincipal;
     }
 }
 

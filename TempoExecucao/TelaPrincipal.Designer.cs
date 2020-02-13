@@ -241,22 +241,23 @@
             // lbl321
             // 
             this.lbl321.AutoSize = true;
-            this.lbl321.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl321.Location = new System.Drawing.Point(56, 95);
+            this.lbl321.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl321.Location = new System.Drawing.Point(310, 123);
             this.lbl321.Name = "lbl321";
-            this.lbl321.Size = new System.Drawing.Size(99, 108);
+            this.lbl321.Size = new System.Drawing.Size(273, 55);
             this.lbl321.TabIndex = 14;
-            this.lbl321.Text = "3";
+            this.lbl321.Text = "Prepare-se";
             this.lbl321.Click += new System.EventHandler(this.lbl321_Click_1);
             // 
             // ptbPrincipal
             // 
-            this.ptbPrincipal.Location = new System.Drawing.Point(304, 22);
+            this.ptbPrincipal.Location = new System.Drawing.Point(303, 25);
             this.ptbPrincipal.Name = "ptbPrincipal";
             this.ptbPrincipal.Size = new System.Drawing.Size(280, 257);
             this.ptbPrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbPrincipal.TabIndex = 15;
             this.ptbPrincipal.TabStop = false;
+            this.ptbPrincipal.Click += new System.EventHandler(this.ptbPrincipal_Click);
             // 
             // TelaPrincipal
             // 
